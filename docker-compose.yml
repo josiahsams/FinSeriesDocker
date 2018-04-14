@@ -1,0 +1,26 @@
+version: "2"
+services:
+  app:
+    container_name: FinSeriesApp
+    environment:
+        - NPM_SCRIPT=start
+    build: FinSeriesApp/.
+    restart: "no"
+    ports:
+      - "3000:3000"
+    links:
+      - mongodb
+  finseriespred:
+    container_name: finseriespred
+    restart: "no"
+    build: FinSeriesPred/.
+    ports:
+      - "5000:5000"
+  mongodb:
+    container_name: finseriesmongo
+    restart: "no"
+    image: mongo
+    volumes:
+      - ./db:/data/db
+    ports:
+      - "27017:27017"
