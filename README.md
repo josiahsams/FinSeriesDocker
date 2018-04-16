@@ -20,7 +20,9 @@ http://localhost:3000
 
 *Note:*
 
-A pretrained model is placed in the root directory of this repository. To get the new model, play around with the `ipython notebook` attached to this repo. The dataset are available in the `./data` directory.
+A pretrained model is placed in the root directory of this repository. 
+To get the new model, play around with the `ipython notebook` found in https://github.com/josiahsams/PredictStock/blob/nifty_docker/TensorFlowMachineLearningWithFinancialDataUsingGPU.ipynb. 
+The dataset are available in the `./data` directory.
 
 During initialization phase, pushed the `*.csv` files data into a `mongodb` for easy querying by the nodejs application.
 
