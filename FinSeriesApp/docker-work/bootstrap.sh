@@ -16,6 +16,9 @@ fi
 echo "Sleep for 10 seconds to sync up with MongoDB"
 sleep 10
 
+echo "Data updation"
+python update.py
+
 echo "DB initialization"
 python mongoClient.py
 
