@@ -16,6 +16,9 @@ RUN apt-get update && \
     && pip install --upgrade pprint \
     && apt-get clean
 
+RUN pip install googlefinance
+RUN pip install googlefinance.client
+
 ENV APP_HOME .
 ENV APP_STARTUP ""
 # JUST_RUN specifies whether node should be installed and git should be cloned

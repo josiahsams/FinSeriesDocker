@@ -19,6 +19,9 @@ sleep 10
 echo "DB initialization"
 python mongoClient.py
 
+echo "DB updation"
+python fetch.py
+
 cd $APP_HOME
 echo Application Home: $APP_HOME
 
